@@ -24,7 +24,7 @@ At Guild, our JavaScript style is based on [JavaScript Standard Style](https://s
 yarn add -D https://github.com/GuildEducationInc/eslint-config-guild.git
 ```
 
-# Usage
+## Usage
 
 To use the Guild JavaScript Style config, first add `eslint` to your project:
 
