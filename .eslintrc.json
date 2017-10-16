@@ -22,7 +22,8 @@
     "node",
     "promise",
     "standard",
-    "react"
+    "react",
+    "jsx-a11y"
   ],
 
   "globals": {
@@ -30,6 +31,10 @@
     "navigator": false,
     "window": false
   },
+
+  "extends": [
+    "plugin:jsx-a11y/recommended"
+  ],
 
   "rules": {
     "accessor-pairs": "error",
