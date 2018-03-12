@@ -1,3 +1,4 @@
+![npm](https://img.shields.io/npm/v/eslint-config-guild.svg)
 # Guild Education JavaScript Style
 
 At Guild, our JavaScript style is based on [JavaScript Standard Style](https://standardjs.com/rules.html) with a few exceptions:
