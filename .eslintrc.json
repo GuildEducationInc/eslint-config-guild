@@ -32,7 +32,9 @@
   "globals": {
     "document": false,
     "navigator": false,
-    "window": false
+    "window": false,
+    "cy": false,
+    "Cypress": false
   },
 
   "extends": [
