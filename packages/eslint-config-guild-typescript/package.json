@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-guild",
+  "name": "eslint-config-guild-typescript",
   "version": "1.0.4",
   "description": "",
   "main": "index.js",
@@ -18,13 +18,10 @@
   },
   "homepage": "https://github.com/GuildEducationInc/eslint-config-guild#readme",
   "peerDependencies": {
-    "typescript": "^3.4.5"
-  },
-  "dependencies": {
     "@typescript-eslint/eslint-plugin": "^1.9.0",
     "@typescript-eslint/parser": "^1.9.0",
     "eslint": "5.3.0",
-    "eslint-config-airbnb": "17.1.0",
+    "eslint-config-guild-base": "17.1.0",
     "eslint-plugin-chai-friendly": "^0.4.1",
     "eslint-plugin-cypress": "^2.2.1",
     "eslint-plugin-import": "^2.14.0",
@@ -36,8 +33,5 @@
     "eslint-plugin-standard": "^3.0.1",
     "eslint-standard-config": "^2.4.1",
     "typescript": "^3.4.5"
-  },
-  "devDependencies": {
-    "lerna": "^3.13.1"
   }
 }
