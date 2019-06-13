@@ -1,6 +1,3 @@
-![npm](https://img.shields.io/npm/v/eslint-config-guild.svg)
-# Guild Education JavaScript Style
-
 At Guild, our JavaScript style is based on [JavaScript Standard Style](https://standardjs.com/rules.html) with a few exceptions:
 
 
@@ -20,29 +17,38 @@ At Guild, our JavaScript style is based on [JavaScript Standard Style](https://s
   function* increment() { ... } // ✓ ok
   ```
 
-## Install
+In addition to [JavaScript Standard Style](https://standardjs.com/rules.html), we also include extend `jsx-a11y/recommended` and `plugin:react/recommended`.
 
-Guild exposes two eslint-configs, one for `typescript` projects and one for `javascript` projects.
+# Getting Started
+We expose two seperate configs based on the language of your project: `Javascript` or `Typescript`. Both follow the [JavaScript Standard Style](https://standardjs.com/rules.html), but `Typescript` include langue specific rules related to the best practacies of types (`@typescript-eslint/recommended`).
+## Install Javascript Config ![npm](https://img.shields.io/npm/v/eslint-config-guild.svg)
+
 To install the `javascript` config, run:
-
 ```bash
-yarn add -D https://github.com/GuildEducationInc/eslint-config-guild.git
+yarn add -D eslint-config-guild 
 ```
+
+If the peer dependicies are needed, run
+```bash
+yarn add -D eslint eslint-plugin-chai-friendly eslint-plugin-cypress eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-standard-config eslint-config-prettier eslint-plugin-prettier
+```
+
+
+## Install Typescript Config ![npm](https://img.shields.io/npm/v/eslint-config-guild-typescript.svg)
+
 
 To install the `typescript` config, run:
 ```bash
-yarn add -D https://github.com/GuildEducationInc/eslint-config-guild-typescript.git
+yarn add -D eslint-config-guild-typescript
+```
+
+If the peer dependicies are needed, run
+```bash
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-chai-friendly eslint-plugin-cypress eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-standard-config typescript
 ```
 
 ## Usage
-
-To use the Guild JavaScript Style config, first add `eslint` to your project:
-
-```bash
-yarn add -D eslint
-```
-
-Then, add the correct extension to your .eslintrc file:
+Extend your `eslint` config with the installed guild config.
 
 For `javascript`:
 ```json
@@ -61,19 +67,21 @@ For `typescript`:
 
 ## Codeclimate Usage
 
-In your projects `.codeclimate.yml` config, add the following:
-
+In your projects `.codeclimate.yml` config, add the appropriate config:
 
 ```diff
 prepare:
   fetch:
-+    - url: 'https://cdn.jsdelivr.net/npm/eslint-config-guild-typescript@{Version}'
+  # For typescript
++    - url: 'https://cdn.jsdelivr.net/npm/eslint-config-guild-typescript@{ersion}'
 +      path: '.eslintrc.js'
+
+  # For Javascript
++    - url: 'https://cdn.jsdelivr.net/npm/eslint-config-guild@{ersion}'
++      path: '.eslintrc.js'
+
 plugins:
 + eslint:
 +  enabled: true
 +  channel: eslint-5
 ```
-To consume the javascript version, just use `.../npm/eslint-config-guild/...`.
-
-We're now using [JsDelivr](https://www.jsdelivr.com/) to serve our lint files because `rawGit` is closing down.

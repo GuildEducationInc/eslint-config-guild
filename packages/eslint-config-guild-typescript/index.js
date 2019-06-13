@@ -1,3 +1,4 @@
+
 module.exports = {
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -35,11 +36,11 @@ module.exports = {
   },
   "extends": [
     "standard",
+    "plugin:@typescript-eslint/recommended",
     "plugin:jsx-a11y/recommended",
     "plugin:react/recommended",
     "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
-    
+    "prettier"
   ],
   "rules": {
     "generator-star-spacing": [
@@ -61,14 +62,19 @@ module.exports = {
     "react/jsx-filename-extension": [
       1, { "extensions": [".tsx", ".jsx"]}
     ],
-    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
   },
   "overrides": [
     {
-      files: ["**/*.tsx"],
+      "files": ["**/*.tsx"],
       "rules": {
         "react/prop-types": "off"
       }
     }
-  ]
+  ],
+  "settings":  {
+    "react":  {
+      "version":  "detect"
+    }
+  }
 }
