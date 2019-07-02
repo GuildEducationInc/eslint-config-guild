@@ -61,6 +61,7 @@ module.exports = {
     ],
     "@typescript-eslint/explicit-member-accessibility": "off",
     "react/prop-types": "off",
+    "@typescript-eslint/camelcase": "off",
     "react/jsx-filename-extension": [
       1, { "extensions": [".tsx", ".jsx"]}
     ],
