@@ -50,6 +50,7 @@ module.exports = {
         "after": true
       }
     ],
+    "@typescript-eslint/no-unused-vars": "error",
     "space-before-function-paren": [
       "error",
       {
@@ -59,19 +60,12 @@ module.exports = {
       }
     ],
     "@typescript-eslint/explicit-member-accessibility": "off",
+    "react/prop-types": "off",
     "react/jsx-filename-extension": [
       1, { "extensions": [".tsx", ".jsx"]}
     ],
     "@typescript-eslint/explicit-function-return-type": "off"
   },
-  "overrides": [
-    {
-      "files": ["**/*.tsx"],
-      "rules": {
-        "react/prop-types": "off"
-      }
-    }
-  ],
   "settings":  {
     "react":  {
       "version":  "detect"

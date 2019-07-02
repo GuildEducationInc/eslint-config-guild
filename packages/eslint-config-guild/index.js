@@ -43,6 +43,7 @@ module.exports = {
     
   ],
   "rules": {
+    "react/prop-types": "off",
     "generator-star-spacing": [
       "error",
       {
