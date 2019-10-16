@@ -45,6 +45,8 @@ module.exports = {
     ],
     "@typescript-eslint/explicit-member-accessibility": "off",
     "@typescript-eslint/camelcase": "off",
-    "@typescript-eslint/explicit-function-return-type": "off"
+    "no-useless-constructor": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
   }
 }
