@@ -10,34 +10,19 @@ module.exports = {
   "env": {
     "es6": true,
     "commonjs": true,
-    "browser": true,
+    "browser": false,
     "node": true,
-    "mocha": true,
-    "jest": true,
-    "cypress/globals": true
+    "mocha": true
   },
   "plugins": [
-    "cypress",
     "import",
     "node",
     "promise",
-    "standard",
-    "react",
-    "jsx-a11y",
-    "chai-friendly"
+    "standard"
   ],
-  "globals": {
-    "document": false,
-    "navigator": false,
-    "window": false,
-    "cy": false,
-    "Cypress": false
-  },
   "extends": [
     "standard",
     "plugin:@typescript-eslint/recommended",
-    "plugin:jsx-a11y/recommended",
-    "plugin:react/recommended",
     "prettier/@typescript-eslint",
     "prettier"
   ],
@@ -59,16 +44,9 @@ module.exports = {
       }
     ],
     "@typescript-eslint/explicit-member-accessibility": "off",
-    "react/prop-types": "off",
     "@typescript-eslint/camelcase": "off",
-    "react/jsx-filename-extension": [
-      1, { "extensions": [".tsx", ".jsx"]}
-    ],
-    "@typescript-eslint/explicit-function-return-type": "off"
-  },
-  "settings":  {
-    "react":  {
-      "version":  "detect"
-    }
+    "no-useless-constructor": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-parameter-properties": "off",
   }
 }
