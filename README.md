@@ -44,7 +44,7 @@ yarn add -D eslint-config-guild-typescript
 
 If the peer dependicies are needed, run
 ```bash
-yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-chai-friendly eslint-plugin-cypress eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-standard-config typescript
+yarn add -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint eslint-plugin-chai-friendly eslint-plugin-cypress eslint-plugin-import eslint-plugin-jsx-a11y eslint-plugin-node eslint-plugin-prettier eslint-plugin-promise eslint-plugin-react eslint-plugin-standard eslint-plugin-jest eslint-plugin-react-hooks eslint-standard-config typescript
 ```
 
 ## Usage
