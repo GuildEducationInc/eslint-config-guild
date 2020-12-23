@@ -2,7 +2,6 @@
   "name": "eslint-config-guild-typescript",
   "version": "2.3.0",
   "description": "Guild Education React + TypeScript style guide.",
-  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
