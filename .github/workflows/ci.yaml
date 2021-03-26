@@ -48,6 +48,6 @@ jobs:
         run: yarn install --network-timeout 10000
       - name: Release
         env:
-          NPM_TOKEN: ${{ secrets.DEVOPS_ALL_NPM_TOKEN }}
-          GITHUB_TOKEN: ${{ secrets.DEVOPS_SEMANTIC_RELEASE_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
         run: npx semantic-release

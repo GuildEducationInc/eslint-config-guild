@@ -1,8 +1,8 @@
 const DEFAULT_RELEASE_RULES = require('@semantic-release/commit-analyzer/lib/default-release-rules');
 
 module.exports = {
-  branches: ['main', 'next'],
-  repositoryUrl: 'https://github.com/GuildEducationInc/eslint-config-guild-typescript',
+  branches: ['master', 'next'],
+  repositoryUrl: 'https://github.com/GuildEducationInc/eslint-config-guild',
   plugins: [
     [
       '@semantic-release/commit-analyzer',
@@ -34,18 +34,7 @@ module.exports = {
         changelogTitle: '# Changelog',
       },
     ],
-    [
-      '@semantic-release/npm',
-      {
-        pkgRoot: 'dist',
-      },
-    ],
-    [
-      '@semantic-release/exec',
-      {
-        prepareCmd: 'node ./postversion.js ${nextRelease.version}',
-      },
-    ],
+    '@semantic-release/npm',
     [
       '@semantic-release/git',
       {
