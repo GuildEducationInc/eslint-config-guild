@@ -1,4 +1,4 @@
-# ESLint Config Guild TypeScript | Changelog
+# Changelog
 
 ## [v2.3.0] - 2020-12-23
 - Add additional rules for standard, import, and React configurations
